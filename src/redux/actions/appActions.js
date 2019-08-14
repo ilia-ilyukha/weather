@@ -1,5 +1,6 @@
 import { ADD_CITY } from "../constants";
 import { REFRESH_WEATHER } from "../constants";
+import { DELETE_CITY } from "../constants";
 
 export const addCityAction = (city) => {
     return{
@@ -13,3 +14,10 @@ export const refreshWeatherAction = (weather) => {
         payload: weather,
     }
 }
+export const deleteCityAction = (id) => {
+    return{
+        type: DELETE_CITY,
+        payload: id,
+    }
+}
+

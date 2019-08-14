@@ -1,8 +1,8 @@
 import { ADD_CITY } from '../constants';
 import { REFRESH_WEATHER } from '../constants';
+import { DELETE_CITY } from '../constants';
 
 const initialState = {
-    // cities: ["Kharkiv", "Kyiv", "Uman"]
     cities: [
         {
             main: {
@@ -33,6 +33,12 @@ export const appReducer = (state = initialState, action) => {
             return {
                 ...state,
                 cities: newWeather,
+            }
+        case DELETE_CITY:
+            delete state.cities[action.payload];
+            return {
+                ...state,
+                cities: state.cities,
             }
         default:
             return state;
