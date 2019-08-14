@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+  margin-top: 10px;
+}
+h1{
+  margin: 0px;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+html{
+  height: 100%;
+}
+body{
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  padding: 0;
+  background-image: url(img/_43284-844.jpg);
+  background-repeat:  no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.wrapper{
+  margin: 20px 0;
+}
+.add-form{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add-form input{  
+  margin: 10px 10px;
+  padding: 10px 29px;
+  font-family: inherit;
+  font-size: 15px;
+  color: #0186c7;
+}
+.add-button{ 
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  background: rgb(132, 176, 215);
+  width: 50px;
+  padding: 5px 17px;
+  font-size: 16px;
+}
+.add-button:hover{
+  background: rgb(108, 163, 206);
+  cursor: pointer;
+}
+.App-link {
+  color: #61dafb;
+}
+.cities-list{
+  display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.city-link{
+  padding: 10px;
+    margin: 15px 10px;
+    width: 209px;
+    color: #0186c7;
+    background: #f7f9f5;
+    border-radius: 26px;
+    border: 1px solid #2262a0;
+    -webkit-box-shadow: 15px 11px 30px 2px rgba(94,161,224,1);
+    -moz-box-shadow: 15px 11px 30px 2px rgba(94,161,224,1);
+    box-shadow: 8px 9px 31px 5px #fffdfda1;
+}
+.city-link a{
+  text-decoration: none;
+  color: #0186c7;
+}
+
+.city-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  color: #0186c7;
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin-top: 10px; 
+}
+.city-detail p {
+  margin: 10px 10px;
+}
+.link{
+  text-decoration: underline;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
