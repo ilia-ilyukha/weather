@@ -5,6 +5,7 @@ import CitiesList from '../CitiesList/CitiesList.jsx';
 class Home extends React.Component {
 
     render() {
+        console.log('Hello!');
         return (
             <div className="wrapper">
                 <AddForm />
